@@ -1,0 +1,9 @@
+
+const { Service } = require('feathers-sequelize');
+
+export default class Products extends Service {
+  constructor(options) {
+    super(options);
+    this.model = this.app.models.Product;
+  }
+}
